@@ -14,3 +14,6 @@ variable "visibility" {
     error_message = "Visibility must be private or public"
   }
 }
+
+# see, seriously not advised, this is awful, also this is set in terraform.tfvars
+variable "description_prefix"{}

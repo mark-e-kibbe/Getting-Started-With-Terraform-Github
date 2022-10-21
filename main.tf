@@ -5,6 +5,6 @@ locals {
 
 resource "github_repository" "example" {
   name        = "Example Terraform Repo"
-  description = "My awesome ${local.concatenated_description}"
+  description = "${var.description_prefix} ${local.concatenated_description}"
   visibility = var.visibility
 }
